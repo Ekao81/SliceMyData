@@ -667,13 +667,16 @@ footer {
     top: 40px;
     left: 40%;
     overflow: hidden;
+    
   }
   .nav > .nav-list > li {
     width: 100%;
-    margin-top: 1.5rem;
+    margin-top: .2rem;
     background-color: white;
+  
   }
   .nav > #nav-check:checked ~ .nav-list {
-    height: calc(100vh - 80vh);
+    height: 30vh;
   }
+
 }
