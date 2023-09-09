@@ -704,11 +704,13 @@ footer {
     width: 25px;
     height: 3px;
     background-color: black;
-    border-radius: 50px;
+    border-radius: 10em;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: transform .4s, translate .4s, width .4s, rotate .4s;
+    transition: all .4s;
+    -webkit-transition: transform .4s;
+    -webkit-transition: -webkit-transform .4s;
   }
 
   .nav > .nav-btn > label > .line-1{
