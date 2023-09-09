@@ -6,6 +6,13 @@
   margin: 0;
 }
 
+:root {
+  --red:rgb(185 28 28);
+  --black:#070101;
+  --button-red:rgb(220 38 38);
+  --popular-red:#bc1c1c;
+}
+
 html {
     background-color: white;
     font-size: 1.1rem;
@@ -61,6 +68,7 @@ h1 {
     font-weight: 800;
     font-size: 3.5rem;
     line-height: 1;
+    color: var(--black);
 }
 
 p {
@@ -68,6 +76,8 @@ p {
     font-size: 1.25rem;
     line-height: 1.5rem;
     color: rgb(55 65 81);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 }
 
 ul {
@@ -95,6 +105,8 @@ a {
 }
 
 
+
+
 /* ---------- NAV ----------  */
 
 .pc-nav {
@@ -105,8 +117,13 @@ a {
 }
 
 .logo {
-  color: red;
+  color: var(--red);
   font-size: 1.7rem;
+  font-weight: 900;
+}
+.logo-1 {
+  color: var(--red);
+  font-size: 3rem;
   font-weight: 900;
 }
 
@@ -174,7 +191,7 @@ a {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: red;
+  background-color: var(--red);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -222,7 +239,7 @@ a {
   .testimonial-span {
     font-weight: 700;
     font-size: .9rem;
-    color: red;
+    color: var(--button-red);
     margin-top: .5rem;
     margin-left: 1rem;
   }
@@ -234,7 +251,7 @@ a {
     font-weight: 600;
     padding: 10px 15px;
     border-radius: 5px;
-    background-color: red;
+    background-color: var(--button-red);
     color: white;
     border: none;
     margin: 2rem 0;
@@ -296,7 +313,7 @@ a {
     width: 65%;
   }
   
-  .item h3,
+  .item h2,
   .item-p {
     width: 70%;
     text-align: center;
@@ -341,6 +358,7 @@ a {
     -moz-box-shadow: 1px 20px 20px -7px rgba(66, 68, 90, 0.5);
     box-shadow: 1px 20px 20px -7px rgba(66, 68, 90, 0.5);
     margin: 1rem;
+    padding-bottom: 2rem;
     margin-top: -3rem;
     z-index: 3;
     background-color: white;
@@ -415,7 +433,7 @@ a {
   
   .price {
     color: rgb(185 28 28);
-    font-weight: 700;
+    font-weight: 800 !important;
     font-size: 3.75rem;
     line-height: 1;
     margin-top: 2rem;
@@ -459,7 +477,7 @@ a {
   /* MOST POPULAR CARD */
   
   .most-popular {
-    background-color: red;
+    background-color: var(--popular-red);
     color: white;
   }
   
@@ -502,6 +520,29 @@ footer {
     line-height: 1.75rem;
     color: rgb(55 65 81 / 1);
   }
+
+
+/* privacy-policy */
+
+
+.pp {
+  width: 80%;
+}
+
+.pp > * {
+  margin: 1rem auto;
+}
+
+.privacy-policy:hover {
+  scale: 1.03;
+  color: blue;
+}
+
+@media (max-width: 700px) {
+  .pp {
+    width: 95%;
+  }
+}
 
 
 /*--------------- MEDIA QUERIES ---------------*/ 
