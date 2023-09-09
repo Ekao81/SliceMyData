@@ -23,24 +23,26 @@
 
     <nav class="nav">
       <input type="checkbox" id="nav-check">
-      <div class="nav-header">
-        <div class="nav-title logo">
-          Slice My Data
+        <div class="nav-header">
+          <div class="nav-title logo">
+            Slice My Data
+          </div>
         </div>
-      </div>
-      <div class="nav-btn menu-items">
-        <label for="nav-check">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-      </div>
+        <div class="nav-btn menu-items" id="menu">
+          <label for="nav-check">
+            <span class="line-1"></span>
+            <span class="line-2"></span>
+            <span class="line-3"></span>
+          </label>
+        </div>
       
       <ul class="nav-list">
         <li><a href="#HIW" class="hover-animation">How It Works</a></li>
         <li><a href="#pricing" class="hover-animation">Pricing</a></li>
       </ul>
     </nav>
+
+    
 
     <section class="sec-1 sec">
         <div class="flex">
@@ -340,5 +342,15 @@
 
         <p>© 2023 Slice My Data, Inc. All rights reserved.</p>
       </footer>
+
+    <script>
+      var toggleClass = document.getElementById("menu");
+    
+      toggleClass.onclick = function() {
+        toggleClass.classList.toggle("open-menu")
+      }
+    </script>
 </body>
+
+
 </html>
