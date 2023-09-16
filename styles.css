@@ -234,11 +234,14 @@ a {
 }
 .nav > .nav-list > li {
   list-style-type: none;
+  background-color: transparent;
 }
 .nav > .nav-list > li a {
   text-decoration: none;
   color: #020000;
   cursor: pointer;
+  width: fit-content;
+  background-color: transparent;
 }
 .nav > #nav-check {
     display: none;
@@ -763,10 +766,6 @@ footer {
     font-weight: 400;
   }
 
-  .hero-pic {
-    margin-top: -5rem;
-  }
-
 
 }
 
@@ -841,13 +840,16 @@ footer {
   .nav > .nav-list > li {
     width: 100%;
     margin-top: .2rem;
-    background-color: white;
+    background-color: transparent;
   
   }
   .nav > #nav-check:checked ~ .nav-list {
     height: 30vh;
   }
 
+  .hero-pic {
+    margin-top: -.5rem;
+  }
 }
 
 /* ------------ hero pics MQs------------- */
