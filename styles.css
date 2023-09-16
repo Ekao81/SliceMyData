@@ -41,7 +41,8 @@ body {
 
 .sec-1,
 .sec-7 {
-  position: relative;
+  position: relative; 
+  overflow-x: hidden;
 }
 
 .background-pink {
@@ -52,7 +53,7 @@ body {
   bottom: -10%;
   height: 10000px;
   z-index: 0;
-  overflow-x: hidden;
+  
 }
 
 .background-pink-sec7 {
@@ -63,6 +64,7 @@ body {
   bottom: -10%;
   height: 125%;
   z-index: 0;
+  overflow-x: hidden;
 }
 
 .centered-sec > p {
@@ -83,6 +85,8 @@ body {
 
     -webkit-perspective: 100px;
     perspective: 100px;
+
+    overflow-x: hidden;
 }
 
 
