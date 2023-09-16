@@ -11,6 +11,7 @@
   --black:#070101;
   --button-red:rgb(220 38 38);
   --popular-red:#bc1c1c;
+  --background-pink:#F2F9FF;
 }
 
 html {
@@ -33,8 +34,33 @@ body {
 .sec {
     display: flex;
     flex-direction: column;
-    margin: 10rem auto;
+    margin: 6rem auto;
 } 
+
+.sec-1,
+.sec-7 {
+  position: relative;
+}
+
+.background-pink {
+  background-color: var(--background-pink);
+  position: absolute;
+  width: 200%;
+  left: -20%;
+  bottom: -10%;
+  height: 1000px;
+  z-index: 0;
+}
+
+.background-pink-sec7 {
+  background-color: var(--background-pink);
+  position: absolute;
+  width: 200%;
+  left: -20%;
+  bottom: -10%;
+  height: 125%;
+  z-index: 0;
+}
 
 .centered-sec > p {
     text-align: center;
@@ -50,12 +76,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+
+    -webkit-perspective: 100px;
+    perspective: 100px;
 }
 
-.container-testimonial {
-    width: 80%;
-    margin: 0 auto;
-}
 
 .container-text {
     display: flex;
@@ -88,13 +114,59 @@ ul > li {
     margin: .3rem 0;
 }
 
+/* ------------ hero pics ------------- */
+
 .hero-pic {
-  width: 70%;
-  padding: 0 1rem;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-left: 2rem;
+  -webkit-perspective: 400px;
+  perspective: 400px;
 }
+
+.hero-pic-1 {
+  position: absolute;
+  display: block;
+  width: 90%;
+  z-index: 1;
+  transform: rotateX(5deg) rotateY(-10deg);
+}
+.hero-pic-2 {
+  position: absolute;
+  display: block;
+  width: calc(100% - 60%);
+  top: 55%;
+  left: -10%;
+  z-index: 3;
+  border-radius: 1rem;
+  box-shadow: 0px 10px 41px -3px white;
+  transform: rotateX(5deg) rotateY(-10deg);
+}
+.hero-pic-3 {
+  position: absolute;
+  display: block;
+  width: calc(100% - 70%);
+  left: 70%;
+  bottom: 50%;
+  z-index: 3;
+  border-radius: .8rem;
+  box-shadow: 0px 10px 41px -3px white;
+  transform: rotateX(5deg) rotateY(-10deg);
+}
+.hero-pic-4 {
+  position: absolute;
+  display: block;
+  width: calc(100% - 60%);
+  top: 65%;
+  left: 55%;
+  z-index: 3;
+  border-radius: 10px;
+  box-shadow: 0px 10px 41px -3px white;
+  transform: rotateX(5deg) rotateY(-10deg);
+}
+/* ------------------- */
 
 img {
   max-width: 100%;
@@ -103,6 +175,7 @@ img {
 a {
   text-decoration: none;
 }
+
 
 
 
@@ -142,9 +215,11 @@ a {
 
 .nav {
   width: 100%;
-  background-color: white;
   display: flex;
   align-items: center;
+  position: relative;
+  z-index: 99;
+  background-color: var(--background-pink);
 }
 
 .nav > .nav-header {
@@ -206,14 +281,14 @@ a {
 
 .testimonial {
     display: flex;
-    margin: 3rem auto;
-    width: 50%;
+    margin: auto 1rem;
+    
   }
 
   .testimonial-img {
     display: grid;
     place-items: center center;
-    margin-right: 1rem;
+    
   }
   
   
@@ -222,7 +297,7 @@ a {
     height: 72px;
     border-radius: 99999px;
     object-fit: cover;
-    
+    margin-right: .5rem;
   }
 
   .testimonial-text {
@@ -233,7 +308,9 @@ a {
   
   .testimonial-review {
     font-size: 1.125rem;
-    
+    color: var(--black);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
   }
   
   .testimonial-span {
@@ -241,7 +318,10 @@ a {
     font-size: .9rem;
     color: var(--button-red);
     margin-top: .5rem;
-    margin-left: 1rem;
+    
+  }
+  .name {
+    color: var(--black);
   }
 
   button {
@@ -582,6 +662,10 @@ footer {
     font-size: 1rem;
   }
 
+  body {
+    perspective: 3cm;
+  }
+
     .testimonial {
       width: 80%;
     }
@@ -597,9 +681,6 @@ footer {
       width: 90%;
     }
 
-    .hero-pic {
-      width: 75%;
-    }
 
     .container-text {
       order: 2;
@@ -636,7 +717,12 @@ footer {
      
       margin: 1rem auto;
     }
-}
+
+    .hero-pic {
+      margin: 5rem;
+    }
+
+  }
 
 @media (max-width: 555px) {
   html {
@@ -676,6 +762,12 @@ footer {
     font-size: 1rem;
     font-weight: 400;
   }
+
+  .hero-pic {
+    margin-top: -5rem;
+  }
+
+
 }
 
 
@@ -757,3 +849,5 @@ footer {
   }
 
 }
+
+/* ------------ hero pics MQs------------- */
