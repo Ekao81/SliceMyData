@@ -124,7 +124,6 @@ ul > li {
   flex-direction: column;
   justify-content: center;
   margin-left: 2rem;
-  -webkit-perspective: 400px;
   perspective: 400px;
 }
 
