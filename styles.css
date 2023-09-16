@@ -19,6 +19,7 @@ html {
     font-size: 1.1rem;
 
     scroll-behavior: smooth;
+    
 }
 
 body {
@@ -29,6 +30,7 @@ body {
     max-width: 1500px;
     margin: 0 auto;
     font-family: 'Titillium Web', Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 .sec {
