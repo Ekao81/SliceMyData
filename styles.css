@@ -132,7 +132,7 @@ ul > li {
   position: absolute;
   display: block;
   width: 90%;
-  z-index: 1;
+  z-index: 0;
   transform: rotateX(5deg) rotateY(-10deg);
 }
 .hero-pic-2 {
@@ -668,7 +668,7 @@ footer {
   }
 
   body {
-    perspective: 3cm;
+    perspective: 100px;
   }
 
     .testimonial {
