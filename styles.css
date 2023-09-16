@@ -126,6 +126,7 @@ ul > li {
 
 .hero-pic {
   perspective: 400px;
+  min-height: 300px;
 }
 
 .hero-pic-1 {
@@ -153,7 +154,7 @@ ul > li {
   display: block;
   width: 26%;
   left: 65%;
-  bottom: 50%;
+  bottom: 55%;
   z-index: 3;
   border-radius: .8rem;
   box-shadow: 0px 10px 41px -3px white;
@@ -163,8 +164,8 @@ ul > li {
   position: absolute;
   display: block;
   width: 30%;
-  top: 65%;
-  left: 55%;
+  top: 55%;
+  left: 53%;
   z-index: 3;
   border-radius: 10px;
   box-shadow: 0px 10px 41px -3px white;
@@ -727,22 +728,9 @@ footer {
     }
 
     .hero-pic {
-      margin: 10rem;
+      margin: 2rem;
+      
     }
-
-    /* .hero-pic-1{
-      width: 50%;
-      margin: 0 auto;
-    }
-    .hero-pic-2 {
-      width: 20%;
-    }
-    .hero-pic-3{
-      width: 20%;
-    }
-    .hero-pic-4{
-      width: 20%;
-    } */
   }
 
 @media (max-width: 555px) {
@@ -868,7 +856,8 @@ footer {
   }
 
   .hero-pic {
-    margin-top: 10rem;
+    margin-top: 2rem;
+    perspective: 200px;
   }
 }
 
