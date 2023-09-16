@@ -45,6 +45,7 @@ body {
 .background-wrapper-main {
   width: 100%;
   position: relative;
+  overflow-x: hidden;
 }
 
 .background-pink {
